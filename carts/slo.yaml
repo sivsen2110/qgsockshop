@@ -8,10 +8,11 @@ objectives:
   - sli: response_time_p95
     pass:
       - criteria:
-          - "<=1000"
+          - <+10%
     warning:
       - criteria:
-          - "<=1500"
+          - <+15%
+    weight: 1
   - sli: throughput
   - sli: error_rate
     weight: 2
