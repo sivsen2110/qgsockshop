@@ -28,12 +28,6 @@ objectives:
       - criteria:
           - <+10%
   - sli: response_time_p50
-   pass:
-      - criteria:
-          - <+10%
-    warning:
-      - criteria:
-          - <+10%
   - sli: response_time_p90
     pass:
       - criteria:
@@ -42,5 +36,5 @@ objectives:
       - criteria:
           - <+10%
 total_score:
-  pass: "95%"
-  warning: "90%"
+  pass: "90%"
+  warning: "75%"
