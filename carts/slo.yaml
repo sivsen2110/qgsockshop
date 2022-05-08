@@ -8,27 +8,39 @@ objectives:
   - sli: response_time_p95
     pass:
       - criteria:
-          - "<=1000"
+          - <+10%
     warning:
       - criteria:
-          - "<=1500"
+          - <+10%
   - sli: throughput
+   pass:
+      - criteria:
+          - <+10%
+    warning:
+      - criteria:
+          - <+10%
   - sli: error_rate
     weight: 2
     pass:
       - criteria:
-          - "<=1"
+          - <+10%
     warning:
       - criteria:
-          - "<=2"
+          - <+10%
   - sli: response_time_p50
+   pass:
+      - criteria:
+          - <+10%
+    warning:
+      - criteria:
+          - <+10%
   - sli: response_time_p90
     pass:
       - criteria:
-          - "<=500"
+          - <+10%
     warning:
       - criteria:
-          - "<=600"
+          - <+10%
 total_score:
-  pass: "90%"
-  warning: "75%"
+  pass: "95%"
+  warning: "90%"
