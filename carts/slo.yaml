@@ -14,13 +14,6 @@ objectives:
           - <+15%
     weight: 1
   - sli: throughput
-    pass:
-      - criteria:
-          - <+10%
-    warning:
-      - criteria:
-          - <+15%
-    weight: 1
   - sli: error_rate
     weight: 2
     pass:
